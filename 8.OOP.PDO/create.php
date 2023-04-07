@@ -4,7 +4,6 @@ require_once __DIR__ . "/functions.php";
 
 $sqlbrands = "SELECT * FROM brands";
 $statement = $pdoconn->query($sqlbrands); // oti nemam parametri samo so query 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,15 +27,10 @@ $statement = $pdoconn->query($sqlbrands); // oti nemam parametri samo so query
     <?php 
     while($brand = $statement->fetch()){
         $id_encrypt = encrypt($brand['id']); // go enkriptiram id-to na brand id i posle vo store go dekriptiram
-        echo "<option value='{$id_encrypt}'>{$brand['name']}</option>";    
-        // option value e vrednosta na toa id i za da ne se gleda vo F12 vo elements brojot na idto
-        // jas go enkriptiram   
+        echo "<option value='{$id_encrypt}'>{$brand['name']}</option>";     
     }
-  
     ?>
     </select> <br>
-
-
 
     <label for="model">Model</label>
     <input type="text" name="model" placeholder="enter your model..." id="model" class="model"/> <br>
@@ -50,7 +44,6 @@ $statement = $pdoconn->query($sqlbrands); // oti nemam parametri samo so query
     ?>
     </select> <br>
     <button>Add car</button>
-
     </form>
     </div>
 </body>
