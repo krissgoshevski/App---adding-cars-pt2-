@@ -12,7 +12,7 @@ $sqliud = "INSERT INTO cars (brand_id_fk, model, year)
 
 $statement = $pdoconn->prepare($sqliud); // za da ne dozvolime SQL injection
 
-$data = ['brand_param' => decrypt($_POST['brand_id_fk']),
+$data = ['brand_param' => decrypt($brand),
          'model' => $model,
          'year'  => $year]; 
 
@@ -24,6 +24,4 @@ if($statement->execute($data)) // za da ne dozvolime SQL injection
 
 header("Location: index.php?status=error");
     die();
-
-
 ?>
