@@ -28,10 +28,5 @@ alter table cars
 add CONSTRAINT foreign key (brand_id_fk) REFERENCES brands (id);
 
 
-
 SELECT * FROM `cars` 
 INNER JOIN brands ON cars.brand_id_fk = brands.id
-
-
-
-
