@@ -1,0 +1,11 @@
+td {
+    padding: 10px;
+    border: 1px solid grey;
+    background-image: linear-gradient(to right, white, rgb(204, 255, 153), white, rgb(204, 255, 153));
+    box-shadow: 0 8px 45px 0 rgba(88, 196, 49, 0.75);
+    border-radius: 1px;
+}
+
+.listtabela {
+    margin: 0 auto;
+}

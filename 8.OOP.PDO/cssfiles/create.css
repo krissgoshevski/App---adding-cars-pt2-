@@ -1,0 +1,54 @@
+label {
+    display: inline-block;
+}
+
+input {
+    margin: 4px;
+    width: 200px;
+    background-image: linear-gradient(to right, white, white, white, white);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    border-radius: 4px;
+}
+
+button {
+    margin: 8px;
+    margin-left: 193px;
+    margin-top: -19px;
+    position: absolute;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, greenyellow, yellow, greenyellow, yellow);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    border: 2px solid black;
+}
+
+.model {
+    margin-left: 2px;
+    border: 2px solid black;
+}
+
+.year {
+    margin-left: 15px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.formone {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    width: 40%;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, white, greenyellow, white, greenyellow);
+    box-shadow: 0 4px 15px 0 rgba(88, 196, 49, 0.75);
+    /*za od stranite rgba(49, 196, 190, 0.75)*/
+}
+
+.brand_id_fk {
+    border-radius: 4px;
+    margin-left: 5px;
+    border: 2px solid black;
+}
+
+.btnupdate {
+    padding-right: 10px;
+}

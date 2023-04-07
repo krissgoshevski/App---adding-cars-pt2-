@@ -1,0 +1,11 @@
+.menu {
+    background-color: greenyellow;
+    background-image: linear-gradient(to right, white, greenyellow, white, greenyellow);
+    box-shadow: 0 8px 45px 0 rgba(88, 196, 49, 0.75);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: double;
+    width: 90%;
+}

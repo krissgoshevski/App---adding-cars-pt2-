@@ -1,0 +1,15 @@
+.overview {
+    text-align: center;
+}
+
+.view {
+    width: 400px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, white, greenyellow, white, greenyellow, white);
+    box-shadow: 0 8px 45px 0 rgba(88, 196, 49, 0.75);
+    color: rgba(74, 62, 62, 0.745);
+    padding: 5px;
+    /*padding 5px --> od site 4 strani se zgolemuva  formata za 5px*/
+    margin: 0 auto;
+    /* margin 0 top za da e na centar tocno */
+}
