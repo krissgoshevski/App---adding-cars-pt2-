@@ -11,11 +11,10 @@ $sqls = "SELECT * FROM cars WHERE id =:id";
 $statement = $pdoconn->prepare($sqls);
 $statement->execute(['id' => $id_decrypt]);
 
-/*
 if($statement->rowCount() == 0){
     header("Location: indexlist.php");
     die();
-} */
+} 
 
 $car = $statement->fetch();
 
@@ -70,12 +69,10 @@ $stmtBrand = $pdoconn->query($sqlselectBrand);
             $selected_value = 'selected';
             echo "<option $selected_value value='$i'>$i</option>"; // za gi lista od 0 do 23ta 
         }
-        
     }
     ?>
     </select> <br>
-    <button class="btnupdate">Update car</button>
-
+     <button class="btnupdate">Update car</button>
     </form>
     </div>
 </body>
